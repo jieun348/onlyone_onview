@@ -1,28 +1,124 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>두두잉글리시 이래서 좋아요!</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <title>두두 잉글리시</title>
+  <style>
+    body {
+      font-family: 'NanumSquare', sans-serif;
+      padding: 30px;
+      line-height: 1.6;
+    }
+
+    /* 🔴 메인 페이지 링크 스타일 */
+    .back-to-main {
+      background-color: #fff0f0;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #f5c2c2;
+      color: #333;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .back-to-main a {
+      color: #d62828;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .back-to-main a:hover {
+      text-decoration: underline;
+      color: #a11e1e;
+    }
+
+    img.represent {
+      max-width: 100%;
+      border-radius: 16px;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    .highlight {
+      background-color: #FFF8DC;
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      margin: 10px 0;
+    }
+
+    .point-list {
+      margin-left: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      background-color: #FFA500;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .buttons button:hover {
+      background-color: #FF8C00;
+    }
+  </style>
 </head>
-<body class="bg-yellow-50 text-gray-800 font-sans">
-  <div class="max-w-4xl mx-auto py-12 px-6">
-    <div class="bg-white shadow rounded-xl p-8">
-      <h1 class="text-3xl font-bold text-yellow-600 mb-4">💡 두두잉글리시 이래서 좋아요!</h1>
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">
-        두두잉글리시은(는) 학습 효과성과 자기주도 역량을 높이기 위해 꼭 필요한 핵심 콘텐츠입니다.<br><br>
-        이 콘텐츠를 통해 학습 루틴을 정립하고, 이해력과 응용력을 동시에 향상시킬 수 있습니다.
-      </p>
-      <ul class="list-disc list-inside text-base text-gray-800 space-y-2 mb-6">
-        <li>🧠 사고력 및 개념 이해를 함께 강화</li>
-        <li>🎯 목표 지향 학습으로 자기주도력 향상</li>
-        <li>📈 다양한 콘텐츠와 연계하여 학습 효율 극대화</li>
-      </ul>
-      <div class="text-right">
-        <a href="../index.html" class="text-blue-600 underline font-medium">← 메인 페이지로 돌아가기</a>
-      </div>
-    </div>
+<body>
+
+  <!-- ✅ 메인 페이지로 돌아가기 링크 -->
+  <div class="back-to-main">
+    메인 페이지로 돌아가려면 <a href="main.html">여기를 클릭하세요.</a>
   </div>
+
+  <h2>📘 두두 잉글리시 학습 안내</h2>
+
+  <!-- 대표 이미지 -->
+  <img src="dodo_english_main.jpg" alt="두두 잉글리시 대표 이미지" class="represent" />
+
+  <!-- 콘텐츠 한 줄 상담 가이드 -->
+  <div class="section-title">▶ 콘텐츠 한 줄 상담 가이드!</div>
+  <div class="highlight">
+    “영어의 기본이 되는 파닉스부터 영단어, 읽기, AI 말하기, 듣기, 쓰기에 원서까지. <br>
+    전 영역 학년별/수준별 맞춤 학습으로 어학원 이상의 효과를 누리세요!”
+  </div>
+
+  <!-- 학습 핵심포인트 -->
+  <div class="section-title">▶ 학습 핵심포인트!</div>
+  <ol class="point-list">
+    <li>영어 레벨테스트 후 수준에 맞는 맞춤 학습 가능</li>
+    <li>각 영역별 학습 특성을 살린 전문화된 체계적인 구성으로 영어의 기본이 되는 파닉스, 워즈부터 읽기, 말하기, 듣기, 쓰기 전 영역 완성 가능</li>
+    <li>리딩, 그래머, 레벨업(중학영어), 영어송 등은 비상교육 영어 교재와 온리원의 학습시스템을 결합하여 온-오프라인 블렌디드 학습 가능</li>
+    <li>초등 영어 검정 교과서 5종의 통합 학습</li>
+    <li>원어민 수준 발음 피드백, 수준에 맞는 영어도서관 및 원서도서관 등을 활용하여 영어 노출 가능</li>
+  </ol>
+
+  <!-- 상세 학습 메뉴 -->
+  <div class="section-title">▶ 상세 학습</div>
+  <div class="buttons">
+    <button onclick="location.href='category_3/3-1.html'">3-1. 파닉스 (Phonics)</button>
+    <button onclick="location.href='category_3/3-2.html'">3-2. 워즈 (Words)</button>
+    <button onclick="location.href='category_3/3-3.html'">3-3. 두잉보카</button>
+    <button onclick="location.href='category_3/3-4.html'">3-4. 리딩 (Reading)</button>
+    <button onclick="location.href='category_3/3-5.html'">3-5. 두두 영어도서관</button>
+    <button onclick="location.href='category_3/3-6.html'">3-6. 두두 원서도서관</button>
+  </div>
+
 </body>
 </html>
