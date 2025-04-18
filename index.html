@@ -50,6 +50,77 @@
     padding: 12px 14px;
   }
 }
+  
+@media (max-width: 768px) {
+  .menu-header {
+    font-size: 1.25rem;
+    padding: 16px 20px;
+  }
+
+  .text-base {
+    font-size: 1rem;
+  }
+
+  .text-xl {
+    font-size: 1.5rem;
+  }
+
+  .text-2xl {
+    font-size: 1.75rem;
+  }
+
+  input[type="text"] {
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  .tag-badge {
+    font-size: 0.85rem;
+    padding: 4px 10px;
+  }
+}
+  
+/* 모바일 상단바 및 메뉴버튼 */
+@media (max-width: 768px) {
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DA2A2A;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 8px;
+  }
+
+  .mobile-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+
+  .mobile-menu-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .menu-header {
+    font-size: 1.2rem !important;
+    padding: 14px 20px !important;
+  }
+
+  input[type="text"] {
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  .tag-badge {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  h1, h2, .text-xl, .text-2xl {
+    font-size: 1.5rem !important;
+  }
+}
   </style>
  </head>
  <body class="bg-gray-50 text-gray-800 font-sans p-6">
@@ -57,7 +128,15 @@
    <!-- 헤더 추가 시작 -->
    <header class="bg-[#DA2A2A] text-white px-6 py-5 flex items-center justify-between mb-6 rounded">
     <!-- 왼쪽 타이틀 -->
-    <h1 class="text-2xl md:text-3xl font-extrabold tracking-wide whitespace-nowrap">
+    <div class="mobile-header md:hidden">
+     <div class="mobile-title">
+      온리원 상담 도구
+     </div>
+     <div class="mobile-menu-icon">
+      ☰
+     </div>
+    </div>
+    <h1 class="text-2xl md:text-3xl font-extrabold tracking-wide whitespace-nowrap hidden md:block">
      테스트페이지입니다~~~~~
     </h1>
     <!-- 오른쪽 로고 -->
