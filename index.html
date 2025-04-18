@@ -19,6 +19,37 @@
       font-size: 0.75rem;
       color: #333;
     }
+  
+/* ✅ 실시간 하이라이팅 */
+.marked {
+  background-color: #fff9c4;
+  font-weight: bold;
+}
+
+/* ✅ 슬라이드 애니메이션 효과 */
+.sub-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.sub-menu.active {
+  max-height: 1000px;
+}
+
+/* ✅ 선택된 토글 메뉴 강조 */
+.menu-header.active {
+  background-color: #facc15 !important;
+  color: #1e293b;
+  font-weight: bold;
+}
+
+/* ✅ 모바일 대응 토글 최적화 */
+@media (max-width: 768px) {
+  .menu-header {
+    font-size: 1.1rem;
+    padding: 12px 14px;
+  }
+}
   </style>
  </head>
  <body class="bg-gray-50 text-gray-800 font-sans p-6">
@@ -68,8 +99,7 @@
       </div>
       <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
        <div class="md:flex-shrink-0">
-        <img alt="1-1_mindmap.png" class="w-full md:w-64 object-cover" src="images/1-1_mindmap.png">
-        </img>
+        <img alt="1-1_mindmap.png" class="w-full md:w-64 object-cover" src="images/1-1_mindmap.png"/>
        </div>
        <div class="p-6">
         <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
@@ -3061,26 +3091,46 @@
    </div>
   </div>
   <script>
-   function toggleMenu(id) {
-  const target = document.getElementById(id);
-  target.classList.toggle("active");
+   function toggleMenu(id, button) {
+  const menu = document.getElementById(id);
+  menu.classList.toggle("active");
+
+  const allHeaders = document.querySelectorAll('.menu-header');
+  allHeaders.forEach(h => h.classList.remove('active'));
+  if (menu.classList.contains('active')) {
+    button.classList.add('active');
+  }
 }
 
 document.getElementById('expandAllToggle').addEventListener('change', function (e) {
   const allMenus = document.querySelectorAll('.sub-menu');
-  allMenus.forEach(menu => {
+  const allHeaders = document.querySelectorAll('.menu-header');
+  allMenus.forEach((menu, i) => {
     if (e.target.checked) {
       menu.classList.add('active');
+      allHeaders[i].classList.add('active');
     } else {
       menu.classList.remove('active');
+      allHeaders[i].classList.remove('active');
     }
   });
 });
 
 document.getElementById('searchInput').addEventListener('input', function (e) {
   const keyword = e.target.value.toLowerCase();
-  const allCards = document.querySelectorAll('.sub-menu');
-  allCards.forEach(section => {
+  const subMenus = document.querySelectorAll('.sub-menu');
+  const headers = document.querySelectorAll('.menu-header');
+
+  headers.forEach(header => {
+    const text = header.textContent.toLowerCase();
+    if (keyword && text.includes(keyword)) {
+      header.classList.add('marked');
+    } else {
+      header.classList.remove('marked');
+    }
+  });
+
+  subMenus.forEach(section => {
     const match = section.innerText.toLowerCase().includes(keyword);
     section.style.display = match ? "block" : "none";
   });
