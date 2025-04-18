@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="ko">
- <head>
-  <meta charset="utf-8"/>
-  <title>
+<head>
+<meta charset="utf-8"/>
+<title>
    OnView (가칭) 온리원 상담 도구 테스트
   </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <style>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<style>
    .sub-menu { display: none; }
     .sub-menu.active { display: block; }
     .tag-badge {
@@ -20,3072 +21,3054 @@
       color: #333;
     }
   </style>
- </head>
- <body class="bg-gray-50 text-gray-800 font-sans p-6">
-  <div class="max-w-5xl mx-auto">
-   <!-- 헤더 추가 시작 -->
-   <header class="bg-[#DA2A2A] text-white px-6 py-5 flex items-center justify-between mb-6 rounded">
-    <!-- 왼쪽 타이틀 -->
-    <h1 class="text-2xl md:text-3xl font-extrabold tracking-wide whitespace-nowrap">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans p-6">
+<div class="max-w-5xl mx-auto">
+<!-- 헤더 추가 시작 -->
+<header class="bg-[#DA2A2A] text-white px-6 py-5 flex items-center justify-between mb-6 rounded">
+<!-- 왼쪽 타이틀 -->
+<h1 class="text-2xl md:text-3xl font-extrabold tracking-wide whitespace-nowrap">
      테스트페이지입니다~~~~~
     </h1>
-    <!-- 오른쪽 로고 -->
-    <img alt="onlyoneBI_2" class="h-12 md:h-16 object-contain" src="onlyoneBI_2.png"/>
-   </header>
-   <!-- 헤더 추가 끝 -->
-   <h1 class="text-3xl font-bold text-center mb-6">
+<!-- 오른쪽 로고 -->
+<img alt="onlyoneBI_2" class="h-12 md:h-16 object-contain" src="onlyoneBI_2.png"/>
+</header>
+<!-- 헤더 추가 끝 -->
+<h1 class="text-3xl font-bold text-center mb-6">
     📚 OnView (가칭) 온리원 상담 도구 테스트
    </h1>
-   <div class="mb-6">
-    <input class="w-full px-4 py-2 border rounded shadow-sm" id="searchInput" placeholder="메뉴명, 해시태그, 설명 검색" type="text"/>
-   </div>
-   <div class="mb-6 text-right">
-    <label class="inline-flex items-center">
-     <input class="form-checkbox mr-2" id="expandAllToggle" type="checkbox"/>
-     <span class="text-base font-medium">
+<div class="mb-6">
+<input class="w-full px-4 py-2 border rounded shadow-sm" id="searchInput" placeholder="메뉴명, 해시태그, 설명 검색" type="text"/>
+</div>
+<div class="mb-6 text-right">
+<label class="inline-flex items-center">
+<input class="form-checkbox mr-2" id="expandAllToggle" type="checkbox"/>
+<span class="text-base font-medium">
       모든 메뉴 펼치기
      </span>
-    </label>
-   </div>
-   <div class="space-y-6" id="menuContainer">
-    <div class="bg-white rounded-lg shadow p-4">
-     <button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-orange-500 hover:bg-orange-600" onclick="toggleMenu('toggle_0')">
+</label>
+</div>
+<div class="space-y-6" id="menuContainer">
+<div class="bg-white rounded-lg shadow p-4">
+<button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-orange-500 hover:bg-orange-600" onclick="toggleMenu('toggle_0')">
       1.메타인지 학습
      </button>
-     <div class="sub-menu mt-4 space-y-4" id="toggle_0">
-      <div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/0_benefit.html'">
-       <div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-         </path>
-        </svg>
-       </div>
-       <div>
-        <a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/1_benefit.html">
-         💡 이래서 좋아요!! 설명 페이지로 이동 &rarr;
+<div class="sub-menu mt-4 space-y-4" id="toggle_0">
+<div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/0_benefit.html'">
+<div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</div>
+<div>
+<a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/1_benefit.html">
+         💡 이래서 좋아요!! 설명 페이지로 이동 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="1-1_mindmap.png" class="w-full md:w-64 object-cover" src="images/1-1_mindmap.png">
-        </img>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="1-1_mindmap.png" class="w-full md:w-64 object-cover" src="images/1-1_mindmap.png"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          1-1.말뼈사전
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          1-1.말뼈사전 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #어휘
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #어휘력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문해력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교과어휘
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #비주얼씽킹
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #용어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #낱말
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_1/1-1.html">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_1/1-1.html">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="1-2_metacard" class="w-full md:w-64 object-cover" src="images/1-2_metacard.jpg"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="1-2_metacard" class="w-full md:w-64 object-cover" src="images/1-2_metacard.jpg"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          1-2.메타카드
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          1-2.메타카드 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #교과개념
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개념정리
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교과어휘
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #메타인지
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #기초
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개념이해
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_1/1-2.html">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_1/1-2.html">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="1-3_gaebbyeo" class="w-full md:w-64 object-cover" src="images/1-3_gaebbyeo.jpg"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="1-3_gaebbyeo" class="w-full md:w-64 object-cover" src="images/1-3_gaebbyeo.jpg"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          1-3.개뼈노트
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          1-3.개뼈노트 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #개념구조화
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교과개념
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개념정리
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #비주얼씽킹
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개뼈세상
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개뼈왕
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개념이해
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #메타인지
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_1/1-3.html">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_1/1-3.html">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="1-4_changui" class="w-full md:w-64 object-cover" src="images/1-4_changui.jpg"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="1-4_changui" class="w-full md:w-64 object-cover" src="images/1-4_changui.jpg"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          1-4.창의융합플러스
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          1-4.창의융합플러스 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #사회이슈
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #융합학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #창의력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #표현력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문제해결력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #메타인지
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #창의융합세상
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #창의논술
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #논술
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독서논술
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_1/1-4.html">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_1/1-4.html">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="1-5.메타플러스 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=1-5.메타플러스"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="1-5.메타플러스 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=1-5.메타플러스"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          1-5.메타플러스
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          1-5.메타플러스 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #비문학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문해력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #국영수
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심화학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #상위권
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #논리력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독해훈련
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #추론력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #메타인지
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_1/1-5.html">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_1/1-5.html">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="1-6.마음챙김 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=1-6.마음챙김"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="1-6.마음챙김 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=1-6.마음챙김"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          1-6.마음챙김
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          1-6.마음챙김 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #신체활동
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심리검사
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #마음표현훈련
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #명상
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #발레
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #댄스
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #요가
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #정서케어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #진로검사
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #성격검사
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #주의력검사
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #마음돌봄
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #감정일기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #집중력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #공부정서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #자기조절력
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_1/1-6.html">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_1/1-6.html">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="bg-white rounded-lg shadow p-4">
-     <button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-blue-600 hover:bg-blue-700" onclick="toggleMenu('toggle_1')">
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4">
+<button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-blue-600 hover:bg-blue-700" onclick="toggleMenu('toggle_1')">
       2.교과서 학습
      </button>
-     <div class="sub-menu mt-4 space-y-4" id="toggle_1">
-      <div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/1_benefit.html'">
-       <div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-         </path>
-        </svg>
-       </div>
-       <div>
-        <a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/2_benefit.html">
-         💡 이래서 좋아요! 설명 페이지로 이동 &rarr;
+<div class="sub-menu mt-4 space-y-4" id="toggle_1">
+<div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/1_benefit.html'">
+<div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</div>
+<div>
+<a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/2_benefit.html">
+         💡 이래서 좋아요! 설명 페이지로 이동 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="2-1.교과정복 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=2-1.교과정복"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="2-1.교과정복 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=2-1.교과정복"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          2-1.교과정복
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          2-1.교과정복 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #교과학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교과공부
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #학교공부
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교과개념
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #전학년
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #전과목
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개념완성
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #오늘의학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개념강의
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #맞춤학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #예복습
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="2-2.퍼펙트특강 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=2-2.퍼펙트특강"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="2-2.퍼펙트특강 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=2-2.퍼펙트특강"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          2-2.퍼펙트특강
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          2-2.퍼펙트특강 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #교과학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교과공부
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #학교공부
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교과개념
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개념완성
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개념강의
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #핵심개념강의
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #복습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #학습누수차단
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #보충학습
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="2-3.메타평가 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=2-3.메타평가"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="2-3.메타평가 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=2-3.메타평가"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          2-3.메타평가
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          2-3.메타평가 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #단원평가
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #서술형평가
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #수시대비문제은행
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #AI서술형챗봇
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #평가대비
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #시험대비
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #성취도평가
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #요점정리
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #진단평가
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #성취도점검
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="bg-white rounded-lg shadow p-4">
-     <button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-green-600 hover:bg-green-700" onclick="toggleMenu('toggle_2')">
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4">
+<button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-green-600 hover:bg-green-700" onclick="toggleMenu('toggle_2')">
       3.두두잉글리시
      </button>
-     <div class="sub-menu mt-4 space-y-4" id="toggle_2">
-      <div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/2_benefit.html'">
-       <div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-         </path>
-        </svg>
-       </div>
-       <div>
-        <a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/3_benefit.html">
-         💡 이래서 좋아요! 설명 페이지로 이동 &rarr;
+<div class="sub-menu mt-4 space-y-4" id="toggle_2">
+<div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/2_benefit.html'">
+<div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</div>
+<div>
+<a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/3_benefit.html">
+         💡 이래서 좋아요! 설명 페이지로 이동 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-1.파닉스 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-1.파닉스"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-1.파닉스 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-1.파닉스"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-1.파닉스
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-1.파닉스 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #파닉스
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #알파벳
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #7세
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #1학년
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #2학년
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영어기초
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_3/3-1.html">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="category_3/3-1.html">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-2.워즈 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-2.워즈"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-2.워즈 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-2.워즈"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-2.워즈
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-2.워즈 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영단어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #어휘
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #보카
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교과어휘
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #필수영단어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #어휘력
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-3.두잉보카 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-3.두잉보카"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-3.두잉보카 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-3.두잉보카"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-3.두잉보카
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-3.두잉보카 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영단어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #어휘
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #보카
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #필수영단어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #중학필수단어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #중등대비
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #어휘력
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-4.리딩 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-4.리딩"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-4.리딩 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-4.리딩"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-4.리딩
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-4.리딩 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독해
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #읽기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독해력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #파닉스리딩
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #패턴리딩
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #구문독해
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #리더스뱅크
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #리딩
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-5.두두 영어도서관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-5.두두 영어도서관"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-5.두두 영어도서관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-5.두두 영어도서관"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-5.두두 영어도서관
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-5.두두 영어도서관 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독해
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #읽기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독해력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영어도서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영어도서관
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #스토리북
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #비디오북
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영자신문
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #펀스토리
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #두두타임즈
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독후활동
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-5.두두 원서도서관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-5.두두 원서도서관"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-5.두두 원서도서관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-5.두두 원서도서관"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-5.두두 원서도서관
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-5.두두 원서도서관 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독해
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #읽기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독해력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영어도서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #원서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #원서도서관
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #옥스포드
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #콜린스
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독후활동
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-5.그래머 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-5.그래머"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-5.그래머 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-5.그래머"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-5.그래머
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-5.그래머 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문법
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #고학년
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #그래머
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-6.레벨업 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-6.레벨업"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-6.레벨업 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-6.레벨업"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-6.레벨업
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-6.레벨업 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #중학영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #중등대비
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #고학년
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #그래머
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #리스닝
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #라이팅
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #리딩
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #듣기평가대비
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심화학습
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-7.리스닝 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-7.리스닝"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-7.리스닝 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-7.리스닝"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-7.리스닝
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-7.리스닝 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #듣기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #리스닝
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #회화
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #의사소통
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #듣기평가대비
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-8.스피킹 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-8.스피킹"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-8.스피킹 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-8.스피킹"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-8.스피킹
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-8.스피킹 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #말하기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #스피킹
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #회화
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #의사소통
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #듣기평가대비
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-9.AI스픽온 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-9.AI스픽온"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-9.AI스픽온 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-9.AI스픽온"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-9.AI스픽온
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-9.AI스픽온 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #말하기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #스피킹
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #회하
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #의사소통
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #AI
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-10.라이팅 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-10.라이팅"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-10.라이팅 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-10.라이팅"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-10.라이팅
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-10.라이팅 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #쓰기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #라이팅
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #쓰기연습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영작연습
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-11.영어송 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-11.영어송"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-11.영어송 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-11.영어송"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-11.영어송
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-11.영어송 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #노래
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #챈트
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영어송
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #저학년
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #알파벳챈트
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #파닉스챈트
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #리딩챈트
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #율동송
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #유명동요
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #스토리동요
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #흥미유발
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-12.레벨테스트 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-12.레벨테스트"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-12.레벨테스트 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-12.레벨테스트"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-12.레벨테스트
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-12.레벨테스트 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #레벨테스트
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #진단평가
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #맞춤학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #수준별
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영역별
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #실력점검
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="bg-white rounded-lg shadow p-4">
-     <button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-purple-600 hover:bg-purple-700" onclick="toggleMenu('toggle_3')">
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4">
+<button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-purple-600 hover:bg-purple-700" onclick="toggleMenu('toggle_3')">
       4.판다수학
      </button>
-     <div class="sub-menu mt-4 space-y-4" id="toggle_3">
-      <div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/3_benefit.html'">
-       <div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-         </path>
-        </svg>
-       </div>
-       <div>
-        <a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/4_benefit.html">
-         💡 이래서 좋아요! 설명 페이지로 이동 &rarr;
+<div class="sub-menu mt-4 space-y-4" id="toggle_3">
+<div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/3_benefit.html'">
+<div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</div>
+<div>
+<a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/4_benefit.html">
+         💡 이래서 좋아요! 설명 페이지로 이동 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4-1.사칙연산 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-1.사칙연산"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4-1.사칙연산 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-1.사칙연산"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4-1.사칙연산
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4-1.사칙연산 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #연산
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #연산기초
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #사칙연산
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #연산력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #계산력
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4-2.연산판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-2.연산판다"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4-2.연산판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-2.연산판다"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4-2.연산판다
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4-2.연산판다 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #연산
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #연산기초
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #연산력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #계산력
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4-3.구구판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-3.구구판다"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4-3.구구판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-3.구구판다"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4-3.구구판다
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4-3.구구판다 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #연산
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #구구단
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #곱셈기초
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #저학년
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #곱셈구구
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4-4.개념판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-4.개념판다"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4-4.개념판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-4.개념판다"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4-4.개념판다
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4-4.개념판다 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #기본단계
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개념
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개념이해
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교과개념
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개념강의
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문제풀이
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4-5.유형판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-5.유형판다"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4-5.유형판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-5.유형판다"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4-5.유형판다
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4-5.유형판다 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #기본단계
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #유형별
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문제풀이
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #대표유형
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4-6.문장제판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-6.문장제판다"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4-6.문장제판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-6.문장제판다"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4-6.문장제판다
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4-6.문장제판다 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #발전단계
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문장제
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문장제문제
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #서술형문제
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문제해결력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문제풀이
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #응용력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #연산
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4-7.실력평가 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-7.실력평가"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4-7.실력평가 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-7.실력평가"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4-7.실력평가
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4-7.실력평가 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #실력평가
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #발전단계
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #시험대비
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문제풀이
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심화문제
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심화학습
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4-8.사고력판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-8.사고력판다"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4-8.사고력판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-8.사고력판다"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4-8.사고력판다
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4-8.사고력판다 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심화단계
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #사고력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #창의사고력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #사고력수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #팩토
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #경시대비
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #상위권
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심화문제
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심화학습
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4-9.최상위판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-9.최상위판다"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4-9.최상위판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-9.최상위판다"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4-9.최상위판다
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4-9.최상위판다 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심화단계
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #최상위
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #최상위수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #최상위권
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #상위권
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문제풀이
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심화문제
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심화학습
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4-10.진단평가 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-10.진단평가"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4-10.진단평가 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-10.진단평가"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4-10.진단평가
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4-10.진단평가 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #진단평가
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #레벨테스트
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #수준별
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영역별
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #맞춤학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #실력점검
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4-11.도형판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-11.도형판다"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4-11.도형판다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-11.도형판다"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4-11.도형판다
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4-11.도형판다 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #도형
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #공간감각
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #고학년
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #입체학습
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4-12.별난사고력 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-12.별난사고력"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4-12.별난사고력 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-12.별난사고력"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4-12.별난사고력
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4-12.별난사고력 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #사고력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #관찰력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #이해력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #수리력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #추론력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #게임형학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #흥미유발
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4-13.퀴즈몬스터 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-13.퀴즈몬스터"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4-13.퀴즈몬스터 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4-13.퀴즈몬스터"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4-13.퀴즈몬스터
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4-13.퀴즈몬스터 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #연산
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영단어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #게임형학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #흥미유발
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #학습동기부여
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="bg-white rounded-lg shadow p-4">
-     <button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-pink-500 hover:bg-pink-600" onclick="toggleMenu('toggle_4')">
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4">
+<button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-pink-500 hover:bg-pink-600" onclick="toggleMenu('toggle_4')">
       5.국영수맞춤학습
      </button>
-     <div class="sub-menu mt-4 space-y-4" id="toggle_4">
-      <div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/4_benefit.html'">
-       <div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-         </path>
-        </svg>
-       </div>
-       <div>
-        <a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/5_benefit.html">
-         💡 이래서 좋아요! 설명 페이지로 이동 &rarr;
+<div class="sub-menu mt-4 space-y-4" id="toggle_4">
+<div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/4_benefit.html'">
+<div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</div>
+<div>
+<a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/5_benefit.html">
+         💡 이래서 좋아요! 설명 페이지로 이동 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="1-5.메타플러스 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=1-5.메타플러스"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="1-5.메타플러스 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=1-5.메타플러스"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          1-5.메타플러스
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          1-5.메타플러스 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #비문학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문해력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #국영수
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심화학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #상위권
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #논리력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독해훈련
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #추론력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #메타인지
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-3.두잉보카 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-3.두잉보카"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-3.두잉보카 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-3.두잉보카"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-3.두잉보카
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-3.두잉보카 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영단어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #어휘
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #보카
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #필수영단어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #중학필수단어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #중등대비
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #어휘력
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-5.두두 영어도서관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-5.두두 영어도서관"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-5.두두 영어도서관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-5.두두 영어도서관"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-5.두두 영어도서관
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-5.두두 영어도서관 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독해
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #읽기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독해력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영어도서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영어도서관
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #스토리북
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #비디오북
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영자신문
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #펀스토리
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #두두타임즈
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독후활동
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-5.두두 원서도서관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-5.두두 원서도서관"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-5.두두 원서도서관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-5.두두 원서도서관"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-5.두두 원서도서관
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-5.두두 원서도서관 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독해
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #읽기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독해력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영어도서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #원서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #원서도서관
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #옥스포드
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #콜린스
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독후활동
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3-9.AI스픽온 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-9.AI스픽온"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3-9.AI스픽온 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3-9.AI스픽온"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3-9.AI스픽온
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3-9.AI스픽온 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #말하기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #스피킹
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #회하
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #의사소통
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #AI
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="3.두두잉글리시 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3.두두잉글리시"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="3.두두잉글리시 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=3.두두잉글리시"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          3.두두잉글리시
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          3.두두잉글리시 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+<div class="mt-3">
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="4.판다수학 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4.판다수학"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="4.판다수학 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=4.판다수학"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          4.판다수학
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          4.판다수학 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+<div class="mt-3">
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="5-1.별난사고력 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-1.별난사고력"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="5-1.별난사고력 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-1.별난사고력"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          5-1.별난사고력
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          5-1.별난사고력 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #사고력수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #게임형학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #창의력향상
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #재미있는수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문제해결력
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="5-2.국어 어휘 카드 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-2.국어 어휘 카드"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="5-2.국어 어휘 카드 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-2.국어 어휘 카드"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          5-2.국어 어휘 카드
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          5-2.국어 어휘 카드 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #국어어휘
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #메타인지학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #어휘력향상
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교과연계
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #받아쓰기대비
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="5-3.한자 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-3.한자"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="5-3.한자 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-3.한자"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          5-3.한자
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          5-3.한자 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #비주얼씽킹
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #한자학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #어휘확장
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #한자급수대비
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #재미있는한자
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="5-4.글뼈도서관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-4.글뼈도서관"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="5-4.글뼈도서관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-4.글뼈도서관"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          5-4.글뼈도서관
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          5-4.글뼈도서관 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #문해력향상
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독서습관
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교과연계독서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #글뼈읽기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독후활동
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #who
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #독서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #전자책
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영상책
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="5-5.국어 첫걸음 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-5.국어 첫걸음"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="5-5.국어 첫걸음 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-5.국어 첫걸음"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          5-5.국어 첫걸음
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          5-5.국어 첫걸음 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #국어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #읽기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #쓰기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문법
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #기초국어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #자음모음학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #낱말학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #한글기초
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #예비초등
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #1학년
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #2학년
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #유아
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문해력
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="5-6.또박또박 가나다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-6.또박또박 가나다"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="5-6.또박또박 가나다 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-6.또박또박 가나다"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          5-6.또박또박 가나다
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          5-6.또박또박 가나다 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #국어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교과서 받아쓰기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #유형별 받아쓰기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #한글쓰기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #바른글씨
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #또박체
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #자음모음쓰기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #글자쓰기연습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #쓰기기초
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #한글학습
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="5-7.국어 어휘카드 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-7.국어 어휘카드"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="5-7.국어 어휘카드 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=5-7.국어 어휘카드"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          5-7.국어 어휘카드
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          5-7.국어 어휘카드 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #국어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #어휘
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #낱말카드
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #어휘력강화
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #유의어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #반의어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #속담학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #관용어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문해력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #1학년
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #2학년
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="bg-white rounded-lg shadow p-4">
-     <button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-indigo-600 hover:bg-indigo-700" onclick="toggleMenu('toggle_5')">
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4">
+<button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-indigo-600 hover:bg-indigo-700" onclick="toggleMenu('toggle_5')">
       6.비상교재학습관
      </button>
-     <div class="sub-menu mt-4 space-y-4" id="toggle_5">
-      <div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/5_benefit.html'">
-       <div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-         </path>
-        </svg>
-       </div>
-       <div>
-        <a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/6_benefit.html">
-         💡 이래서 좋아요! 설명 페이지로 이동 &rarr;
+<div class="sub-menu mt-4 space-y-4" id="toggle_5">
+<div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/5_benefit.html'">
+<div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</div>
+<div>
+<a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/6_benefit.html">
+         💡 이래서 좋아요! 설명 페이지로 이동 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="6-1.비상교재학습관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=6-1.비상교재학습관"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="6-1.비상교재학습관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=6-1.비상교재학습관"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          6-1.비상교재학습관
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          6-1.비상교재학습관 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #교재
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #베스트셀러
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #개념완성
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #문제풀이
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #메타인지학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교재연계
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #사회
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #과학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #오답해설강의
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="6-2.온리원중등LITE 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=6-2.온리원중등LITE"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="6-2.온리원중등LITE 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=6-2.온리원중등LITE"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          6-2.온리원중등LITE
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          6-2.온리원중등LITE 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #중등
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #중학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #중등대비
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #자기주도학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #메타인지학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #중등선행
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #중등강의
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #중등필독서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #대치동
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="bg-white rounded-lg shadow p-4">
-     <button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-teal-500 hover:bg-teal-600" onclick="toggleMenu('toggle_6')">
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4">
+<button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-teal-500 hover:bg-teal-600" onclick="toggleMenu('toggle_6')">
       7.최상위TOP
      </button>
-     <div class="sub-menu mt-4 space-y-4" id="toggle_6">
-      <div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/6_benefit.html'">
-       <div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-         </path>
-        </svg>
-       </div>
-       <div>
-        <a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/7_benefit.html">
-         💡 이래서 좋아요! 설명 페이지로 이동 &rarr;
+<div class="sub-menu mt-4 space-y-4" id="toggle_6">
+<div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/6_benefit.html'">
+<div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</div>
+<div>
+<a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/7_benefit.html">
+         💡 이래서 좋아요! 설명 페이지로 이동 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="7.최상위TOP 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=7.최상위TOP"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="7.최상위TOP 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=7.최상위TOP"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          7.최상위TOP
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          7.최상위TOP 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #심화수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #사고력수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #서술형대비
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #경시
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #TESOM
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #계통도
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #영재
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심화
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #입시
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #창의사고력
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="bg-white rounded-lg shadow p-4">
-     <button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-orange-500 hover:bg-orange-600" onclick="toggleMenu('toggle_7')">
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4">
+<button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-orange-500 hover:bg-orange-600" onclick="toggleMenu('toggle_7')">
       8.과목별학습
      </button>
-     <div class="sub-menu mt-4 space-y-4" id="toggle_7">
-      <div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/7_benefit.html'">
-       <div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-         </path>
-        </svg>
-       </div>
-       <div>
-        <a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/8_benefit.html">
-         💡 이래서 좋아요! 설명 페이지로 이동 &rarr;
+<div class="sub-menu mt-4 space-y-4" id="toggle_7">
+<div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/7_benefit.html'">
+<div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</div>
+<div>
+<a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/8_benefit.html">
+         💡 이래서 좋아요! 설명 페이지로 이동 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="1-6.마음챙김 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=1-6.마음챙김"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="1-6.마음챙김 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=1-6.마음챙김"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          1-6.마음챙김
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          1-6.마음챙김 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #신체활동
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #심리검사
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #마음표현훈련
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #명상
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #발레
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #댄스
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #요가
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #정서케어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #진로검사
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #성격검사
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #주의력검사
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #마음돌봄
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #감정일기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #집중력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #공부정서
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #자기조절력
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="8-1.과학체험관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=8-1.과학체험관"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="8-1.과학체험관 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=8-1.과학체험관"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          8-1.과학체험관
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          8-1.과학체험관 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #과학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #VR과학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #가상실험
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #과학자이야기
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #실험
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #교과실험
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="8-2.역사 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=8-2.역사"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="8-2.역사 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=8-2.역사"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          8-2.역사
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          8-2.역사 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #한국사
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #세계사
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #역사애니메이션
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #한국사능력검정
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #역사퀴즈
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="8-3.코딩 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=8-3.코딩"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="8-3.코딩 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=8-3.코딩"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          8-3.코딩
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          8-3.코딩 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #코딩
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #코딩교육
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #블록코딩
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #스크래치
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #엔트리
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #컴퓨팅사고력
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="8-4.코플소 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=8-4.코플소"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="8-4.코플소 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=8-4.코플소"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          8-4.코플소
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          8-4.코플소 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #코딩
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #스토리코딩
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #코딩게임
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #게임형학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #사고력
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #프로그래밍기초
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="8-5.특별학습 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=8-5.특별학습"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="8-5.특별학습 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=8-5.특별학습"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          8-5.특별학습
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          8-5.특별학습 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #오늘의 발견
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #예체능
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #타자
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #타자연습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #음악
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #미술
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #체육
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #계기교육
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="8-6.게임학습 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=8-6.게임학습"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="8-6.게임학습 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=8-6.게임학습"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          8-6.게임학습
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          8-6.게임학습 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #교과게임
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #게임형학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #지식퀴즈
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #게임
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #흥미
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="bg-white rounded-lg shadow p-4">
-     <button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-blue-600 hover:bg-blue-700" onclick="toggleMenu('toggle_8')">
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4">
+<button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-blue-600 hover:bg-blue-700" onclick="toggleMenu('toggle_8')">
       9.온리원플러스
      </button>
-     <div class="sub-menu mt-4 space-y-4" id="toggle_8">
-      <div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/8_benefit.html'">
-       <div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-         </path>
-        </svg>
-       </div>
-       <div>
-        <a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/9_benefit.html">
-         💡 이래서 좋아요! 설명 페이지로 이동 &rarr;
+<div class="sub-menu mt-4 space-y-4" id="toggle_8">
+<div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/8_benefit.html'">
+<div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</div>
+<div>
+<a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/9_benefit.html">
+         💡 이래서 좋아요! 설명 페이지로 이동 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="9-1.AI캠프 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=9-1.AI캠프"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="9-1.AI캠프 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=9-1.AI캠프"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          9-1.AI캠프
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          9-1.AI캠프 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #AI학습코스
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #자기주도학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #레벨테스트
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #성장리포트
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #오답노트
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="9-2.온커뮤니티 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=9-2.온커뮤니티"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="9-2.온커뮤니티 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=9-2.온커뮤니티"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          9-2.온커뮤니티
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          9-2.온커뮤니티 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #생각나눔
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #온툰
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #온튜브
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #지식공유
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #메타인지
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #소통
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="9-3.공득이랜드 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=9-3.공득이랜드"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="9-3.공득이랜드 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=9-3.공득이랜드"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          9-3.공득이랜드
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          9-3.공득이랜드 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #학습보상
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #캐니몰
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #게임
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #동기부여
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #습관
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="9-4.히어로즈 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=9-4.히어로즈"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="9-4.히어로즈 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=9-4.히어로즈"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          9-4.히어로즈
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          9-4.히어로즈 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #동기부여
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #학습미션
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #캐니보상
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #성취감
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #우수회원
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #학습도전
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="bg-white rounded-lg shadow p-4">
-     <button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-green-600 hover:bg-green-700" onclick="toggleMenu('toggle_9')">
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4">
+<button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-green-600 hover:bg-green-700" onclick="toggleMenu('toggle_9')">
       10.자기주도다이어리
      </button>
-     <div class="sub-menu mt-4 space-y-4" id="toggle_9">
-      <div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/9_benefit.html'">
-       <div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-         </path>
-        </svg>
-       </div>
-       <div>
-        <a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/10_benefit.html">
-         💡 이래서 좋아요! 설명 페이지로 이동 &rarr;
+<div class="sub-menu mt-4 space-y-4" id="toggle_9">
+<div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/9_benefit.html'">
+<div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</div>
+<div>
+<a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/10_benefit.html">
+         💡 이래서 좋아요! 설명 페이지로 이동 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="10.자기주도다이어리 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=10.자기주도다이어리"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="10.자기주도다이어리 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=10.자기주도다이어리"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          10.자기주도다이어리
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          10.자기주도다이어리 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #계획
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #학습계획
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #자기주도학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #습관
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #오답노트
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #학습결과
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #숙제
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #루틴
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="bg-white rounded-lg shadow p-4">
-     <button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-purple-600 hover:bg-purple-700" onclick="toggleMenu('toggle_10')">
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4">
+<button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-purple-600 hover:bg-purple-700" onclick="toggleMenu('toggle_10')">
       11.메타로드
      </button>
-     <div class="sub-menu mt-4 space-y-4" id="toggle_10">
-      <div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/10_benefit.html'">
-       <div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-         </path>
-        </svg>
-       </div>
-       <div>
-        <a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/11_benefit.html">
-         💡 이래서 좋아요! 설명 페이지로 이동 &rarr;
+<div class="sub-menu mt-4 space-y-4" id="toggle_10">
+<div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/10_benefit.html'">
+<div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</div>
+<div>
+<a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/11_benefit.html">
+         💡 이래서 좋아요! 설명 페이지로 이동 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="11.메타로드 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=11.메타로드"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="11.메타로드 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=11.메타로드"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          11.메타로드
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          11.메타로드 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #계획
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #동기부여
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #자기주도학습
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="bg-white rounded-lg shadow p-4">
-     <button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-pink-500 hover:bg-pink-600" onclick="toggleMenu('toggle_11')">
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4">
+<button class="w-full text-left text-white px-4 py-3 rounded font-semibold transition duration-200 bg-pink-500 hover:bg-pink-600" onclick="toggleMenu('toggle_11')">
       12.누리학습
      </button>
-     <div class="sub-menu mt-4 space-y-4" id="toggle_11">
-      <div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/11_benefit.html'">
-       <div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-         </path>
-        </svg>
-       </div>
-       <div>
-        <a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/12_benefit.html">
-         💡 이래서 좋아요! 설명 페이지로 이동 &rarr;
+<div class="sub-menu mt-4 space-y-4" id="toggle_11">
+<div class="info-card mb-4 flex items-center p-4 rounded-lg border-l-8 border-yellow-400 bg-yellow-50 shadow-md hover:shadow-lg cursor-pointer transition" onclick="location.href='benefits/11_benefit.html'">
+<div class="flex-shrink-0 mr-4 bg-yellow-400 rounded-full p-2">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</div>
+<div>
+<a class="text-base font-bold text-yellow-800 hover:underline" href="benefits/12_benefit.html">
+         💡 이래서 좋아요! 설명 페이지로 이동 →
         </a>
-       </div>
-      </div>
-      <div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
-       <div class="md:flex-shrink-0">
-        <img alt="12.누리학습 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=12.누리학습"/>
-       </div>
-       <div class="p-6">
-        <h2 class="text-xl md:text-2xl font-bold text-yellow-700">
+</div>
+</div>
+<div class="bg-white shadow-md rounded-lg overflow-hidden md:flex hover:shadow-lg transition-shadow duration-200">
+<div class="md:flex-shrink-0">
+<img alt="12.누리학습 이미지" class="w-full md:w-64 object-cover" src="https://via.placeholder.com/400x200.png?text=12.누리학습"/>
+</div>
+<div class="p-6">
+<h2 class="text-xl md:text-2xl font-bold text-yellow-700">
          12.누리학습
         </h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
+<p class="text-base md:text-lg text-gray-700 leading-relaxed mt-2">
          12.누리학습 콘텐츠 설명이 여기에 들어갑니다.
         </p>
-        <div class="mt-3">
-         <span class="tag-badge">
+<div class="mt-3">
+<span class="tag-badge">
           #7세
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #키즈
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #예비초등
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #누리과정
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #놀이학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #창의력발달
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #한글기초
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #유아수학
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #유아영어
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #말놀이학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #초등대비
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #스토리텔링학습
          </span>
-         <span class="tag-badge">
+<span class="tag-badge">
           #유아맞춤학습
          </span>
-        </div>
-        <a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
-         자세히 보기 &rarr;
+</div>
+<a class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold" href="#">
+         자세히 보기 →
         </a>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </div>
-  <script>
-   function toggleMenu(id) {
-  const allMenus = document.querySelectorAll('.sub-menu');
-  allMenus.forEach(menu => menu.classList.remove("active"));
-  const target = document.getElementById(id);
-  target.classList.add("active");
-}
-
-    document.getElementById('expandAllToggle').addEventListener('change', function (e) {
-      const allMenus = document.querySelectorAll('.sub-menu');
-      allMenus.forEach(menu => {
-        if (e.target.checked) {
-          menu.classList.add('active');
-        } else {
-          menu.classList.remove('active');
-        }
-      });
-    });
-    document.getElementById('searchInput').addEventListener('input', function (e) {
-      const keyword = e.target.value.toLowerCase();
-      const allCards = document.querySelectorAll('.sub-menu');
-      allCards.forEach(section => {
-        const match = section.innerText.toLowerCase().includes(keyword);
-        section.style.display = match ? "block" : "none";
-      });
-    });
-  </script>
- </body>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.getElementById('searchInput').addEventListener('input', function (e) {
+  const keyword = e.target.value.toLowerCase();
+  const allCards = document.querySelectorAll('.sub-menu > div');
+  allCards.forEach(card => {
+    const match = card.innerText.toLowerCase().includes(keyword);
+    card.style.display = match ? "block" : "none";
+  });
+});
+</script>
+</body>
 </html>
