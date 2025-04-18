@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>3-2.워즈 콘텐츠 상세</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
+<meta charset="utf-8"/>
+<title>3-2.워즈 콘텐츠 상세</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
     .slide {
       display: none;
     }
@@ -23,42 +24,58 @@
     .dot.active {
       background-color: #333;
     }
-  </style>
+  
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem !important;
+  }
+  p, .text-base {
+    font-size: 1.1rem !important;
+  }
+  .dot {
+    height: 14px;
+    width: 14px;
+  }
+  a[href="../../index.html"] {
+    font-size: 1.25rem !important;
+    padding: 1rem 2rem !important;
+  }
+  button {
+    font-size: 1.5rem !important;
+    padding: 0.75rem 1.25rem !important;
+  }
+}
+</style>
 </head>
 <body class="bg-white text-gray-900 font-sans p-6">
-  <div class="max-w-3xl mx-auto">
-    <h1 class="text-2xl font-bold mb-4">📘 3-2.워즈</h1>
-    <p class="text-base leading-relaxed mb-6">
+<div class="max-w-3xl mx-auto">
+<h1 class="text-2xl font-bold mb-4">📘 3-2.워즈</h1>
+<p class="text-base leading-relaxed mb-6">
       아래 슬라이드를 넘기며 <strong>두두잉글리시 - 워즈</strong>의 실제 콘텐츠를 확인해보세요!
     </p>
-
-    <!-- ✅ 슬라이드 이미지 영역 -->
-    <div class="relative">
-      <img src="https://jieun348.github.io/onlyone_onview/textbook/dodo_words/slide1.PNG" class="slide active w-full rounded-lg shadow-md" />
-      <img src="https://jieun348.github.io/onlyone_onview/textbook/dodo_words/slide2.PNG" class="slide w-full rounded-lg shadow-md" />
-      <img src="https://jieun348.github.io/onlyone_onview/textbook/dodo_words/slide3.PNG" class="slide w-full rounded-lg shadow-md" />
-
-      <!-- 슬라이드 이동 버튼 -->
-      <button onclick="changeSlide(-1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white px-3 py-2 rounded-l hover:bg-gray-900">←</button>
-      <button onclick="changeSlide(1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white px-3 py-2 rounded-r hover:bg-gray-900">→</button>
-    </div>
-
-    <!-- ✅ 하단 점 표시 -->
-    <div class="flex justify-center mt-4" id="dotContainer">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-
-    <!-- ✅ 메인페이지로 돌아가기 버튼 -->
-    <div class="mt-8 text-center">
-      <a href="../../index.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700 transition">
+<!-- ✅ 슬라이드 이미지 영역 -->
+<div class="relative">
+<img class="slide active w-full rounded-lg shadow-md" src="https://jieun348.github.io/onlyone_onview/textbook/dodo_words/slide1.PNG"/>
+<img class="slide w-full rounded-lg shadow-md" src="https://jieun348.github.io/onlyone_onview/textbook/dodo_words/slide2.PNG"/>
+<img class="slide w-full rounded-lg shadow-md" src="https://jieun348.github.io/onlyone_onview/textbook/dodo_words/slide3.PNG"/>
+<!-- 슬라이드 이동 버튼 -->
+<button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white px-3 py-2 rounded-l hover:bg-gray-900" onclick="changeSlide(-1)">←</button>
+<button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white px-3 py-2 rounded-r hover:bg-gray-900" onclick="changeSlide(1)">→</button>
+</div>
+<!-- ✅ 하단 점 표시 -->
+<div class="flex justify-center mt-4" id="dotContainer">
+<span class="dot active"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+<!-- ✅ 메인페이지로 돌아가기 버튼 -->
+<div class="mt-8 text-center">
+<a class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700 transition" href="../../index.html">
         ← 메인 페이지로 돌아가기
       </a>
-    </div>
-  </div>
-
-  <script>
+</div>
+</div>
+<script>
     const slides = document.querySelectorAll(".slide");
     const dots = document.querySelectorAll(".dot");
     let currentSlide = 0;
