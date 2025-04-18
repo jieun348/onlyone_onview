@@ -7,7 +7,7 @@
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const slide = urlParams.get('slide') || 'phonics';
-    const server = "https://your-php-server.com"; // 여기에 실제 PHP 서버 주소 입력
+    const server = "http://onview.infy.uk"; // 
     document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("slideFrame").src = server + "/view.php?slide=" + slide;
     });
@@ -16,3 +16,5 @@
 </head>
 <body><iframe id="slideFrame"></iframe></body>
 </html>
+
+
