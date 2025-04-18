@@ -1,20 +1,46 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>OnView 교안 뷰어</title>
   <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const slide = urlParams.get('slide') || 'phonics';
-    const server = "http://onview.infy.uk"; // 
+    const server = "http://onview.infy.uk"; // PHP 서버 주소
+    const slides = {
+      phonics: "파닉스",
+      words: "워즈",
+      speaking: "스피킹",
+      grammar: "그래머",
+      reading: "리딩",
+      writing: "라이팅",
+      library: "영어도서관"
+    };
+
+    const slide = new URLSearchParams(window.location.search).get("slide") || "phonics";
+
     document.addEventListener("DOMContentLoaded", () => {
-      document.getElementById("slideFrame").src = server + "/view.php?slide=" + slide;
+      const nav = document.getElementById("nav");
+      for (let key in slides) {
+        const btn = document.createElement("button");
+        btn.innerText = slides[key];
+        btn.onclick = () => {
+          window.location.href = `viewer.html?slide=${key}`;
+        };
+        nav.appendChild(btn);
+      }
+
+      document.getElementById("slideFrame").src = `${server}/view.php?slide=${slide}`;
     });
   </script>
-  <style>body { margin:0; } iframe { width:100vw; height:100vh; border:none; }</style>
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    #nav { padding: 10px; background: #f0f0f0; text-align: center; }
+    #nav button { margin: 5px; padding: 8px 12px; border: none; border-radius: 6px; cursor: pointer; }
+    #nav button:hover { background: #ddd; }
+    iframe { width: 100vw; height: calc(100vh - 50px); border: none; }
+  </style>
 </head>
-<body><iframe id="slideFrame"></iframe></body>
+<body>
+  <div id="nav"></div>
+  <iframe id="slideFrame"></iframe>
+</body>
 </html>
-
-
