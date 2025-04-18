@@ -122,9 +122,21 @@
     font-size: 1.5rem !important;
   }
 }
-  </style>
+  
+/* 서브메뉴가 잘리지 않도록 보완 */
+.sub-menu {
+  display: none;
+  max-height: none !important;
+  overflow: visible !important;
+  padding-bottom: 2rem;
+}
+
+.sub-menu.active {
+  display: block;
+}
+</style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans p-6">
+<body class="bg-gray-50 text-gray-800 font-sans p-6 overflow-visible">
 <div class="max-w-5xl mx-auto">
 <!-- 헤더 추가 시작 -->
 <header class="bg-[#DA2A2A] text-white px-6 py-5 flex items-center justify-between mb-6 rounded">
